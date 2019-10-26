@@ -8,8 +8,8 @@ server.use(bodyParser.json());
 const neo4j = require("neo4j-driver").v1;
 
 const driver = neo4j.driver(
-  "bolt://localhost:7687",
-  neo4j.auth.basic("neo4j", "1234")
+  "bolt://10.104.133.37:7687",
+  neo4j.auth.basic("neo4j", "")
 );
 const session = driver.session();
 
